@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fida ur Rehman | Portfolio</title>
+  <meta name="description" content="Portfolio of Fida ur Rehman — Front-end Developer" />
+
+  <!-- Google Font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Fida.css">
+  <link rel="stylesheet" href="./nav1.css">
+
+  <!-- ANIMATION LINK  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+   <!-- ============ LINK FRONTAWSOME ============ -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <!-- ==== HEADER SECTION ==== -->
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">F</div>
+        <div>
+          <div style="font-weight:700">Fida ur Rehman</div>
+          <div class="muted" style="font-size:12.5px">Front-end Dveloper</div>
+        </div>
+      </div>
+
+        <!-- ===================== MOBILE HEADER ===================== -->
+  <header class="mobile-header123">
+    <div class="container123">
+      <div class="brand123"></div>
+
+      <button id="menuBtn123" class="menu-toggle123" 
+        aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu">
+        <span class="hamburger123"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE SLIDE MENU -->
+  <nav id="mobileNav123" class="mobile-nav123" aria-hidden="true" data-open="false">
+    <button id="closeBtn123" class="nav-close123">&times;</button>
+
+    <ul class="nav-list123">
+      <li><a href="#hero" class="nav-link123 active123">Home</a></li> 
+      <li><a href="#about" class="nav-link123">About</a></li>
+      <li><a href="#project" class="nav-link123">Project</a></li>
+      <li><a href="#skills" class="nav-link123">Skills</a></li>
+      <li><a href="#contact" class="nav-link123">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== DESKTOP HEADER ===================== -->
+  <header class="desktop-header123">
+    <div class="logo123"></div>
+    <nav>
+      <ul class="nav-links123">
+        <li><a href="#hero" class="active123">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+    </header>
+
+    <!-- === HERO SECTION === -- class="animate__animated animate__slideInUp"-->
+
+    <main>
+      <section id="hero" class="hero animate__animated animate__fadeIn">
+        <div class="card">
+          <h1>Hi — I'm Fida ur Rehman</h1>
+          <p class="lead">I build clean, responsive websites and modern web applications. I specialize in front-end development using HTML, CSS, Bootstrap, JavaScript, TypeScript, Tailwind CSS, React.js, and Firebase. I also work with Figma to design intuitive and user-friendly interfaces.</p>
+
+          <div class="row cta">
+            <!-- === LINK PORJECT === -->
+            <button class="btn" onclick="scrollToSection('project')">See Projects</button>
+            <button class="btn secondary" onclick="scrollToSection('contact')">Contact Me</button>
+          </div>
+
+          <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">
+            <div class="muted">Location: Peshawar, Pakistan</div>
+            <div class="muted">Email: <a href="mailto:youremail@example.com">fida461985@gmail.com</a></div>
+          </div>
+        </div>
+
+        <aside class="profile card">
+          <!-- <img src="." alt="Profile picture"> -->
+          <img src="./Fida ur Rahaman.jpg" alt="Profile photo"/>
+
+          <!-- === SKILL SECTION === -->
+
+          <div class="skills">
+            <div class="skill">FRONT-END DEVELOPER</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React.JS</div>
+            <div class="skill">Tailwind css</div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- === ABOUT SECTION ==== -->
+
+      <section id="about" class="animate__animated animate__flipInX">
+        <div class="card">
+          <h2>About me</h2>
+          <p class="muted">I'm a Front-End Developer passionate about creating clean, modern, and responsive web experiences. I love transforming designs into real, functional interfaces using efficient code. My focus is on building websites that are easy to use, accessible, and optimized for performance.</p>
+        </div>
+      </section>
+
+      <!-- ==== PROJECT SECTION ==== -->
+
+      <section id="project" class="animate__animated animate__flipInX">
+        <h2 style="margin-top:18px">Projects</h2>
+        <div class="grid-3">
+          <article class="project card">
+            <div>
+              <h3>Portfolio Website</h3>
+              <p class="muted">A lightweight single-page portfolio that’s fully responsive — made with HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="row">
+              <div class="tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <!-- <span class="tag">React.js</span> -->
+              </div>
+              <button class="btn secondary" onclick="openProject('Portfolio Website','A complete one-file portfolio template. Just update the images and project details with your personal work.')">Details</button>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div>
+              <h3>E-commerce Website</h3>
+              <p class="muted">A fully responsive e-commerce web application built with modern front-end technologies.</p>
+            </div>
+            <div class="row">
+              <div class="tags">
+                <!-- <span class="tag">JavaScript</span> -->
+                <span class="tag">Tailwind css</span>
+                <span class="tag">React.js</span>
+              </div>
+              <button class="btn secondary" onclick="openProject('E-commerce Website','Features include product listings, shopping cart functionality, and checkout workflow.')">Details</button>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div>
+              <h3>Calculator</h3>
+              <p class="muted">A responsive web-based calculator built with HTML, CSS, and JavaScript. This project demonstrates interactive UI design and functional programming.</p>
+            </div>
+            <div class="row">
+              <div class="tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+              <button class="btn secondary" onclick="openProject('Calculator','Users can perform basic arithmetic operations such as addition, subtraction, multiplication, and division.')">Details</button>
+            </div>
+          </article>
+
+          
+      </section>
+
+<!-- ====SKIILL SECTION==== -->
+
+      <section id="skills" class="animate__animated animate__flipInX">
+        <h2 style="margin-top:18px">Skills</h2>
+        <div class="card">
+          <div style="display:flex;gap:20px;flex-wrap:wrap">
+            <div style="flex:1;min-width:220px">
+              <h3>Front-end</h3>
+              <ul class="muted">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React.Js</li>
+              </ul>
+            </div>
+            <div style="flex:1;min-width:220px">
+              <h3>Tools</h3>
+              <ul class="muted">
+                <li>Git & GitHub</li>
+                <li>Figma (UI design)</li>
+                <li>VS Code</li>
+                <li>Chrome DevTools</li>
+              </ul>
+            </div>
+
+            <div style="flex:1;min-width:220px">
+              <h3>Frameworks & Libraries</h3>
+              <ul class="muted">
+                <li>React.js</li>
+                <li>Bootstrap</li>
+                <li>Tailwind CSS</li>
+                <li>Node js</li>
+              </ul>
+            </div>
+
+            <div style="flex:1;min-width:220px">
+              <h3>Soft skills</h3>
+              <ul class="muted">
+                <li>Communication</li>
+                <li>Problem-Solving</li>
+                <li>Time Management</li>
+                <li>Attention to Detail</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====CONTACT SECTION==== -->
+
+      <section id="contact" class="animate__animated animate__flipInX">
+        <h2 style="margin-top:18px">Contact</h2>
+        <div class="card" style="display:grid;grid-template-columns:1fr 360px;gap:18px">
+          <div>
+            <form id="contactForm">
+              <label for="name">Name</label>
+              <input id="name" name="name" required placeholder="Your name" />
+
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="you@example.com" />
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required placeholder="Write a short message"></textarea>
+
+              <div style="display:flex;gap:10px;margin-top:8px">
+                <button class="btn" type="submit">Send</button>
+                <button type="button" class="btn secondary" onclick="resetForm()">Reset</button>
+              </div>
+
+              <p id="formMsg" class="muted" style="margin-top:8px"></p>
+            </form>
+          </div>
+
+          <!-- === Quick INFO SECTION ===-->
+          <aside"padding:12px;border-radius:10px;background:rgba(255,255,255,0.02)" class="aside">
+            <h3>Quick info</h3>
+            <p class="muted">Prefer email? Write me at <a href="mailto:youremail@example.com">fida461985@gmail.com</a>. Or connect on <a href="fida-ur-Rahman-7595">LinkedIn</a>.</p>
+            <p class="muted">Phone: +92 3255897244</p>
+          </aside>
+        </div>
+      </section>
+
+    </main>
+
+  <!-- footer  -->
+   <footer class="footer">
+  <div class="footer-container">
+    <div>© <span id="year"></span> Fida ur Rehman — Built with HTML, CSS, JS & REACT.JS</div>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61550364080947" target="_blank" aria-label="Facebook">
+        <img class="social-iconimg" src="./Social icon/FB.svg" alt="Facebook">
+      </a>
+      <a href="https://www.youtube.com/@RAHMAN-200" target="_blank" aria-label="YouTube">
+        <img src="./Social icon/youtube.svg" alt="YouTube">
+      </a>
+      <a href="https://instagram.com/fida.ur.rahman.7595" target="_blank" aria-label="Instagram">
+        <img src="./Social icon/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://www.linkedin.com/in/fida-ur-rahman7595/" target="_blank" aria-label="LinkedIn">
+        <img src="./Social icon/linkedin.svg" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/Fida-ur-Rahman" target="_blank" aria-label="GitHub">
+        <img src="./Social icon/github-brands-solid-full.svg" alt="GitHub">
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+<!-- JavaScript Section Link -->
+<script src="./Fida.js"></script>
+<script src="nav.js"></script>
+</html>
